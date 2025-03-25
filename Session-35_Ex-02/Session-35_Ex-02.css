@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #2e1b47; /* Màu nền tối hơn để giống hình */
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Nút "ADD BOOKMARK" */
+  #addBookmark {
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #addBookmark:hover {
+    background-color: rgb(111, 111, 111);
+  }
+  
+  /* Phần danh sách bookmark */
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  li {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  li:hover {
+    background-color: rgb(111, 111, 111);
+    cursor: pointer;
+  }
+  
+
+  li .btn-close {
+    margin-left: auto;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /*#Popup "Add Bookmark" */
+  #popUp {
+    color: white;
+    background-color: #563d7c;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Mặc định ẩn */
+  }
+  
+  /* Tiêu đề#popup */
+  #popUp .title {
+    background-color: #812dff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Nút đóng#popup */
+  #popUp .deletePopup {
+    font-size: 20px;
+    color: white;
+  }
+  
+  #popUp .deletePopup:hover {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Form nhập bookmark */
+  #popUp form {
+    padding: 20px;
+  }
+  
+  #popUp .form-group {
+    margin-bottom: 15px;
+  }
+  
+  #popUp label {
+    font-weight: bold;
+  }
+  
+  #popUp input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Nút Save */
+  #popUp button[type="submit"] {
+    color: white;
+    background-color: #812dff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  #popUp button[type="submit"]:hover {
+    background-color: #b799e3;
+  }
+  

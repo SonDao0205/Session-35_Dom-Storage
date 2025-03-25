@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.diven{
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+button{
+    width: 30%;
+    padding: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+}
+
+thead{
+    background-color: rgb(214, 214, 214);
+}
+
+table,th,td {
+    border: 1px solid rgb(221, 221, 221);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+
