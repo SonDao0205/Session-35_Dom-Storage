@@ -79,8 +79,8 @@ formElement.addEventListener("submit", function (event) {
 
         employeeLocals.push(newStaff);
         localStorage.setItem("employs", JSON.stringify(employeeLocals));
-
-        currentPage = getTotalPages; // Chuyển đến trang cuối sau khi thêm nhân viên mới
+         // Chuyển đến trang cuối sau khi thêm nhân viên mới
+        currentPage = getTotalPages;
         renderData(currentPage);
         renderPagination();
 
