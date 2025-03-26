@@ -6,7 +6,7 @@
   }
   
   body {
-    background-color: #2e1b47; /* Màu nền tối hơn để giống hình */
+    background-color: #2e1b47; 
     color: white;
     font-family: Arial, sans-serif;
   }
@@ -20,7 +20,7 @@
     margin-top: 50px;
   }
   
-  /* Nút "ADD BOOKMARK" */
+  
   #addBookmark {
     padding: 15px 30px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -69,7 +69,7 @@
     color: white;
   }
   
-  /*#Popup "Add Bookmark" */
+  /* popUp */
   #popUp {
     color: white;
     background-color: #563d7c;
@@ -80,10 +80,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none; /* Mặc định ẩn */
+    display: none; 
   }
   
-  /* Tiêu đề#popup */
   #popUp .title {
     background-color: #812dff;
     color: white;
