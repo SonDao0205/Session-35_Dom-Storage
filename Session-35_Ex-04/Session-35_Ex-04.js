@@ -19,7 +19,8 @@ const tableElement = document.querySelector("#bodyTable");
 const paginationElement = document.querySelector(".pagination");
 
 let currentPage = 1;
-const totalPerPage = 3; // Số lượng nhân viên hiển thị trên mỗi trang
+// Số lượng nhân viên hiển thị trên mỗi trang
+const totalPerPage = 3; 
 
 // Cập nhật tổng số trang
 const getTotalPages = Math.ceil(employeeLocals.length / totalPerPage);
@@ -50,9 +51,7 @@ const renderPagination = () => {
     for (let i = 1; i <= totalPages; i++) {
         const li = document.createElement("li");
         li.classList.add("page-item");
-        if (i === currentPage) li.classList.add("active"); // Đánh dấu trang hiện tại
         li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
-
         // Xử lý sự kiện khi bấm vào số trang
         li.addEventListener("click", () => {
             currentPage = i;
