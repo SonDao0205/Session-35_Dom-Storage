@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="header-1">
+                <h1>Danh mục</h1>
+                <button type="button" class="btn btn-primary icon" id="addPopUp" data-bs-toggle="modal" data-bs-target="#categoryModal">Thêm mới danh mục</button>
+            </div>
+            <div class="header-2">
+                <div class="form-group_1">
+                    <select id="optionFilter" class="form-select" aria-label="Default select example">
+                        <option value="1" selected>Tất cả</option>
+                        <option value="2">Đang hoạt động</option>
+                        <option value="3">Ngừng hoạt động</option>
+                      </select>
+                </div>
+                <div class="form-group_2">
+                    <input id="searchInput" type="text" class="form-control" placeholder="Tìm kiếm danh mục theo tên">
+                    <span><i id="searchButton" class="bi bi-search"></i></span>
+                </div>
+            </div>
+        </header>
+        <div class="overlay" id="overlay" style="display: none;"></div>
+        <div class="popUp" id="popUp" style="display: none;">
+            <div class="header">
+                <h2>Thêm mới danh mục</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="body">
+                <form action="" id="form">
+                    <div class="form-group">
+                        <label for="idProduct">Mã danh mục</label>
+                        <input type="text" class="form-control" name="idProduct" id="idProduct">
+                        <p class="error">Mã danh mục không được để trống</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="nameProduct">Tên danh mục</label>
+                        <input type="text" class="form-control" name="nameProduct" id="nameProduct">
+                        <p class="error">Tên danh mục không được để trống</p>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioActive" value="1" checked>
+                        <label for="radioActive">Đang hoạt động</label>
+                        <span>&nbsp;</span>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioInactive" value="2">
+                        <label for="radioInactive">Ngừng hoạt động</label>
+                    </div>                    
+                    <div class="diven"></div>
+                    <div class="footer">
+                        <button type="button" class="btn" id="cancelButton">Huỷ</button>
+                        <button type="submit" id="addButton" class="btn btn-primary">Thêm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <section>
+            <table class="table">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Mã danh mục <i class="bi bi-arrow-down"></i></th>
+                    <th scope="col">Tên danh mục <i class="bi bi-arrow-down"></i></th>
+                    <th scope="col">Trạng thái</th>
+                    <th scope="col">Chức năng</th>
+                  </tr>
+                </thead>
+                <tbody id="bodyTable">
+                </tbody>
+              </table>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
